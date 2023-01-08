@@ -1,52 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Elements</title>
+    <title>Audio & Video</title>
     <style>
-        body {
-            font-family: sans-serif;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.1.25em;
-            line-height: 1.6;
-            color: #333;
-            padding: 2em;
+        /* body, h1 {
+            padding: 0;
+            margin: 0;
+            font-family: arial;
         }
 
         .hero {
-            display: grid;
-            grid-gap: 2em;
+            display: flex;
+            justify-content: center;
             align-items: center;
-        }
+            text-align: center;
+            /* background-color: rgba(0, 0, 0, 0.3); */
+            /* background-image: linear-gradient(to right, rgba(0, 242, 96, 0.3), rgba(47, 167, 248, 0.3));
+            color: rgba (255, 255, 255, 0.5);
+            font-size: 3em;
+            position: relative;
+            min-height: 100vh;
+            overflow: hidden;
+        } */
 
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        @media (min-width: 960px) {
-            .hero {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
+        /* .video-bg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            min-height: 100%;
+            min-width: 100%;
+            z-index: -1;
+        } */
     </style>
 </head>
+
 <body>
-    <div class="hero">
-        <div class="hero-text">
-            <h1>Hello WPU</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit omnis eius deleniti inventore ipsa rerum?</p>
-        </div>
-        <picture>
-            <source media="(min-width: 960px)" srcset="img/CuGIhHvWAAQIeF8.jpg" sizes="50vw">
-            <source media="(min-width: 600px)" srcset="img/david-beckham-england-v-argentina-japan-world-cup-sapporo-stadium-japan-07-jun-2002-photo-credit-mark-pain-alamy-stock-photo-2CGD5FJ.jpg">
-            <img src="img/gadis_ayu.jpg" alt="Nike Ardilla">
-        </picture>
-    </div>
+    <!-- <audio src="audio/Muse - Hysteria.mp3" controls></audio> -->
+
+    <!-- <figure>
+        <figcaption>
+            Dengarkan "Muse - Hysteria"
+        </figcaption>
+        <audio controls loop muted>
+            <source src="audio/Muse - Hysteria.mp3" type="audio/mpeg">
+            <source src="audio/Nike Ardilla - Seberkas Sinar.mp3" type="audio/mpeg">
+        </audio>
+    </figure> -->
+
+    <!-- <video src="video/NIKE ARDILLA MAKAN BAKSO.mp4" width="400" controls></video> -->
+
+    <!-- <figure>
+        <figcaption>
+            Merry Christmas 2022
+        </figcaption>
+        <video controls width="400" poster="img/gadis_ayu.jpg" loop autoplay muted>
+            <source src="video/NIKE ARDILLA MAKAN BAKSO.mp4" type="video/mp4">
+            Browser tidak mendukung tag <code>video</code>.
+        </video>
+    </figure> -->
+
+    <!-- <div class="hero">
+        <h1>Welcome to WPU</h1>
+        <video class="video-bg" src="video/NIKE ARDILLA MAKAN BAKSO.mp4" autoplay muted loop></video>
+    </div> -->
+
+    <video controls width="400">
+        <source src="video/1. Apa itu HTML5 _ Belajar HTML5.mp4" type="video/mp4">
+        <track src="captions/caption2.vtt" kind="captions" title="Bahasa Indonesia" srclang="id">
+    </video>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Q2VqCG13ejA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 </body>
+
 </html>
